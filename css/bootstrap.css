@@ -11,7 +11,13 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
+  padding-top: 50px;
   margin: 0;
+}
+@media (max-width: 979px) {
+  body{
+    padding-top: 0px;
+  }
 }
 article,
 aside,
