@@ -86,7 +86,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+
+      <div class="col-md-4">
         <h2>About Me</h2>
         <p>
           Currently I am finishing my Ph.D. in Mechanical Engineering (ME), with focus on energy and fluids, at
@@ -96,43 +97,50 @@
           department of Everett Community College and a part-time researcher at UW respectively.
         </p>
       </div>
-      <!-- <div class="col-md-4">
-        <h2>Contribution</h2>
-        <p>
-        I have setup this website, so we can all collaborate together in order
-        to develope new ideas and maybe my existing research and programs can
-        help to reach your goal easier and faster. For now you can find more
-        information about me in my social networking website.
-        </p>
-      </div> -->
+
+      <div class="col-md-4">
+        <h2></h2>
+          <a class="twitter-timeline"
+            href="https://twitter.com/Ardeshirj"
+            data-widget-id="495644245047267329">Tweets by @Ardeshirj
+          </a>
+      </div>
+
       <div class="col-md-4">
         <h2>Networking</h2>
         <p>
-        You can find me in following social networking.
+          You can find me in following social networks.
         </p>
         <a class="btn btn-social-icon btn-linkedin"
           href="http://www.linkedin.com/pub/teymour-javaherchi/11/849/660">
           <i class="fa fa-linkedin"></i>
-        </a>
-        <a class="btn btn-social-icon btn-twitter"
-          href="https://twitter.com/teymourj">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a class="btn btn-social-icon btn-google-plus"
-          href="https://github.com/Ardeshirj">
-          <i class="fa fa-google-plus"></i>
         </a>
         <a class="btn btn-social-icon btn-github"
           href="https://github.com/Ardeshirj">
           <i class="fa fa-github"></i>
         </a>
       </div>
+
     </div>
   </div>
 
   <!--jQuery & javaScript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+
+  <!-- Twitter timeline widget -->
+  <script>
+    !function(d,s,id){
+      var js,
+      fjs=d.getElementsByTagName(s)[0],
+      p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id;
+        js.src=p+"://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }}
+    (document,"script","twitter-wjs");
+  </script>
 
   </body>
 </html>
