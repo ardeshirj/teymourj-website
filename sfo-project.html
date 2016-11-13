@@ -7,19 +7,13 @@
     <!--Mobile type-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font awesome-->
-    <link
-    rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap-override.css" >
 
-    <!--Bootstrap-->
-    <!-- Latest compiled and minified CSS -->
-    <link
-    rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-    <!--Override boostrap -->
-    <link rel="stylesheet" href="public/css/bootstrap-override.css">
-
-    <!-- Google Analytics -->
+    <!--JS-->
+    <script src="public/js/twitter.js"></script>
     <script src="public/js/google-analytics.js"></script>
   </head>
 
@@ -33,12 +27,11 @@
             type = "button"
             class="navbar-toggle"
             data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
           </button>
           <!--Logo next to home button-->
           <a class="navbar-brand">Teymour Javaherchi</a>
@@ -48,27 +41,19 @@
           <ul class="nav navbar-nav">
             <!-- buttons next to the logo-->
             <li>
-              <a href="http://staff.washington.edu/teymourj/index.html">
-                Home
-              </a>
+              <a href="http://staff.washington.edu/teymourj/index.html">Home</a>
             </li>
 
             <li>
-              <a href="http://staff.washington.edu/teymourj/research.html">
-                Reasearch
-              </a>
+              <a href="http://staff.washington.edu/teymourj/research.html">Reasearch</a>
             </li>
 
             <li>
-              <a href="http://staff.washington.edu/teymourj/publications.html">
-                Publications
-              </a>
+              <a href="http://staff.washington.edu/teymourj/publications.html">Publications</a>
             </li>
 
             <li class="active">
-              <a href="http://staff.washington.edu/teymourj/sfo-project.html">
-                SFO Project
-              </a>
+              <a href="http://staff.washington.edu/teymourj/sfo-project.html">SFO Project</a>
             </li>
           </ul>
         </div>
@@ -76,377 +61,363 @@
     </div>
 
     <div class="container" style="padding-top: 10px">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#sfo-overview" aria-controls="sfo-overview" data-toggle="tab">Overview</a>
+          </li>
+          <li>
+            <a href="#sfo-case-studies" aria-controls="sfo-case-studies" data-toggle="tab">Case Studies</a>
+          </li>
+        </ul>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">About SFO-Project</div>
-        <div class="panel-body">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="sfo-overview" style="padding-top: 20px">
+            <img class="img-responsive center-block"
+              src="images/sfoLogoLarge.png"
+              style="height:200px; width:200px">
+              <p>
+                Whether you are a profesional Computational Fluid Dynamics (CFD)
+                user or want to explore CFD for the first time, one of the most common
+                approaches to develop a CFD simulation for a
+                new case study of interest is to search for the most similar,
+                previously developed and validated CFD simulation among other works.
+                A simple search would result into a pool of written/visual tutorials.
+                However, users should spend significant amount of time and effort to find
+                the most correct, compatible and valid tutorial in this pool and further
+                modify it toward their simulation of interest.</br>
+                </br>
+                SFO is an open-source project with the core idea of saving the
+                above-mentioned time and effort. This is done via documenting/sharing
+                scientific and methodological approaches to develop CFD simulations for
+                a wide spectrum of fundamental and industrial case studies in three
+                different CFD solvers; <b>STAR-CCM+</b>, <b>FLUENT</b> and <b>Open FOAM</b>
+                (<b>SFO</b>). All of the steps and required files of these tutorials
+                are accessible and editable under the common roof of Github (a web-based Git
+                repository hosting service).</br>
+                </br>
+                Currently SFO-Project has 10+ national and international engineer
+                and scientist members and a library of 20+ developed CFD tutorials.
+                Below are the list currently developed and under-development CFD case
+                studies in this project. Our team is actively looking forward to your
+                feedback, comments and to host you as a new SFO-er! Please Email us at
+                <a href="mailto:sfo.cfd@gmail.com">sfo.cfd@gmail.com</a> to either add your current
+                project to our archive or learn CFD by taking the lead of a existing
+                project. Our expert members will train and collaborate with you side-by-side
+                <b>FREE</b> of any charge and expenss!
+              </p>
+          </div>
 
-          <img class="img-responsive center-block" src="images/sfoLogoLarge.png" style="height:200px; width:200px">
-            <p>
-              Whether you are a profesional Computational Fluid Dynamics (CFD)
-              user or want to explore CFD for the first time, one of the most common
-              approaches to develop a CFD simulation for a
-              new case study of interest is to search for the most similar,
-              previously developed and validated CFD simulation among other works.
-              A simple search would result into a pool of written/visual tutorials.
-              However, users should spend significant amount of time and effort to find
-              the most correct, compatible and valid tutorial in this pool and further
-              modify it toward their simulation of interest.</br>
-              </br>
-              SFO is an open-source project with the core idea of saving the
-              above-mentioned time and effort. This is done via documenting/sharing
-              scientific and methodological approaches to develop CFD simulations for
-              a wide spectrum of fundamental and industrial case studies in three
-              different CFD solvers; <b>STAR-CCM+</b>, <b>FLUENT</b> and <b>Open FOAM</b>
-              (<b>SFO</b>). All of the steps and required files of these tutorials
-              are accessible and editable under the common roof of Github (a web-based Git
-              repository hosting service).</br>
-              </br>
-              Currently SFO-Project has 10+ national and international engineer
-              and scientist members and a library of 20+ developed CFD tutorials.
-              Below are the list currently developed and under-development CFD case
-              studies in this project. Our team is actively looking forward to your
-              feedback, comments and to host you as a new SFO-er! Please Email us at
-              <a href="mailto:sfo.cfd@gmail.com">sfo.cfd@gmail.com</a> to either add your current
-              project to our archive or learn CFD by taking the lead of a existing
-              project. Our expert members will train and collaborate with you side-by-side
-              <b>FREE</b> of any charge and expenss!
-            </p>
+          <div class="tab-pane" id="sfo-case-studies" style="padding-top: 20px">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Case Study Tier 1</th>
+                  <th>CFD Packages</th>
+                </tr>
+              </thead>
 
+              <tbody>
+                <tr>
+                  <td>2D Flow In Backwardstep Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow In Rectangular Pipe Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow Over Cylinder Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow Over Cylinder Laminar Unsteady</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow Over Flat Plate Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow Over Rectangle Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default disabled"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default disabled"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2D Flow Over Rotating Cylinder Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>3D Flow in Circular Pipe Laminar</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Open_Foam/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        OpenFoam
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <th>Case Study Tier 2</th>
+                  <th></th>
+                </tr>
+
+                <tr>
+                  <td>3D Flow Over Wind/Tidal Turbine 1D Linear Momentum Turbulent</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-over-WindTidal-turbine-1DMomentum-turbulent/blob/master/Star_CCM_Plus/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Star-CCM-Plus
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>3D Flow Over Wind/Tidal Turbine Virtual Blade Model (VBM) Turbulent</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-over-WindTidal-turbine-VBM-turbulent/blob/master/Fluent/README.ipynb">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>3D Lagrangian Particle Dispersion Discrete Random Walk (DRW) Turbulent</td>
+
+                  <td>
+                    <a class="btn btn-default"
+                      target="_blank"
+                      href="#">
+                      <i class="fa fa-arrow-circle-right">
+                        Fluent
+                      </i>
+                    </a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <table id='tier1-tbl' class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th>Case Study Tier 1</th>
-            <th>CFD Packages</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>2D Flow In Backwardstep Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-backwardstep-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow In Rectangular Pipe Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-in-rectangular-pipe-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow Over Cylinder Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow Over Cylinder Laminar Unsteady</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-cylinder-laminar-unsteady/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow Over Flat Plate Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-flat-plate-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow Over Rectangle Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default disabled"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default disabled"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rectangle-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2D Flow Over Rotating Cylinder Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/2D-flow-over-rotating-cylinder-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>3D Flow in Circular Pipe Laminar</td>
-
-            <td>
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Star_CCM_Plus/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Star-CCM-Plus
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Fluent/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  Fluent
-                </i>
-              </a>
-
-              <a
-                class="btn btn-default"
-                target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-in-circular-pipe-laminar/blob/master/Open_Foam/README.ipynb"
-              >
-                <i class="fa fa-arrow-circle-right">
-                  OpenFoam
-                </i>
-              </a>
-            </td>
-          </tr>
-
-
-          <tr>
-            <th>Case Study Tier 2</th>
-            <th></th>
-          </tr>
-
-          <tr>
-           <td>3D Flow Over Wind/Tidal Turbine 1D Linear Momentum Turbulent</td>
-
-           <td>
-             <a
-               class="btn btn-default"
-               target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-over-WindTidal-turbine-1DMomentum-turbulent/blob/master/Star_CCM_Plus/README.ipynb"
-             >
-               <i class="fa fa-arrow-circle-right">
-                 Star-CCM-Plus
-               </i>
-             </a>
-
-           </td>
-          </tr>
-
-          <tr>
-           <td>3D Flow Over Wind/Tidal Turbine Virtual Blade Model (VBM) Turbulent</td>
-
-           <td>
-             <a
-               class="btn btn-default"
-               target="_blank" href="http://nbviewer.jupyter.org/github/sfo-project/3D-flow-over-WindTidal-turbine-VBM-turbulent/blob/master/Fluent/README.ipynb"
-             >
-               <i class="fa fa-arrow-circle-right">
-                 Fluent
-               </i>
-             </a>
-
-           </td>
-          </tr>
-
-          <tr>
-           <td>3D Lagrangian Particle Dispersion Discrete Random Walk (DRW) Turbulent</td>
-
-           <td>
-             <a
-               class="btn btn-default"
-               target="_blank" href=""
-             >
-               <i class="fa fa-arrow-circle-right">
-                 Fluent
-               </i>
-             </a>
-
-           </td>
-          </tr>
-
-
-        </tbody>
-      </table>
     </div>
 
+    <!--jQuery & javaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>
