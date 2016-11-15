@@ -36,3 +36,13 @@ body {
   color: #000000;
   background-color: #c79900;
 }
+
+.thumbnail img {
+  min-height: 250px;
+  height: 250px;
+  overflow: auto;
+}
+
+.thumbnail .caption {
+  min-height: 300px;
+}
