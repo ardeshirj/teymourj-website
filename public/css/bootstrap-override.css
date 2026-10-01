@@ -46,3 +46,19 @@ body {
 .thumbnail .caption {
   min-height: 300px;
 }
+
+/* Home page carousel: fixed 2:1 frame so slides of different sizes don't
+   change the carousel height; each image is scaled to fit inside it. */
+#slides .item {
+  height: 50vw;
+  max-height: 300px;
+}
+#slides .item > a {
+  display: block;
+  height: 100%;
+}
+#slides .item > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
