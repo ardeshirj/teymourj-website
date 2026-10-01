@@ -37,10 +37,17 @@ body {
   background-color: #c79900;
 }
 
-.thumbnail img {
-  min-height: 250px;
+/* Research figures keep their own aspect ratio, capped in height. */
+.thumbnail > img {
+  max-height: 400px;
+}
+
+/* Member photos share one height; contain keeps them from being squashed
+   when the column is narrower than the photo. */
+#sfo-members .thumbnail > img {
+  width: 100%;
   height: 250px;
-  overflow: auto;
+  object-fit: contain;
 }
 
 .thumbnail .caption {
